@@ -21,13 +21,13 @@ export const sessionReducer = (state = initialState, action) => {
   // debugger;
   switch (action.type) {
     case "ADD_SESSION":
-      debugger;
+      // debugger;
       return {
         ...state,
         details: action.session,
       };
     case "DEL_SESSION":
-      debugger;
+      // debugger;
       const temp = state;
       temp.details = {};
       return { ...temp };
