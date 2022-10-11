@@ -9,7 +9,7 @@ import { ArrowLeftMinor, QuestionMarkMajor } from "@shopify/polaris-icons";
 import { useState, useCallback } from "react";
 
 function Navbar(props) {
-//   debugger;
+  //   debugger;
   console.log(props);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const [isSecondaryMenuOpen, setIsSecondaryMenuOpen] = useState(false);
@@ -60,7 +60,7 @@ function Navbar(props) {
       ]}
       name={props.details.customer_name}
       detail={props.details.username}
-      initials={props.details.customer_name.slice(0, 1)}
+      initials={props?.details?.customer_name?.slice(0, 1)}
       open={isUserMenuOpen}
       onToggle={toggleIsUserMenuOpen}
     />

@@ -86,7 +86,7 @@ function Login(props) {
           };
 
           props.addSession(payload);
-          localStorage.setItem("details", JSON.stringify(payload));
+          sessionStorage.setItem("details", JSON.stringify(payload));
           //   console.log(store);
           // debugger;
           setUser({});
